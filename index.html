@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
-	<header>
+	<header id = 'lol1'>
 		<div class="search-wrapper">
 			<h1>Развлечения</h1>
 			<form id="search-box-wrapper">
-				<i id="search-icon"></i>
-				<input type="search" name="" id="search-box">
+				<div id="search-icon-wrapper">
+					<div id="search-icon"></div>
+				</div>
+				<input type="text" name="" id="search-box" placeholder="Какой магазин вам нужен?">
 			</form>
 		</div>
 	</header>
-	<aside>
+	<aside id = 'lol2'>
 		<div class="menu-wrapper">
 			<div class="logo-wrapper">
 				<div id="logo"></div>
-				BECO
+				<div id="name">BECO</div>
+				<div id="menu-button-wrapper">
+					<div id="big-circle"></div>
+					<div id="menu-button"></div>
+				</div>
 			</div>
-			<a class="menu-el">
-				<img src="./images/square.svg" alt="myImage" class="icon">
-			Каталог</a>
-			<a class="menu-el">
-				<img src="./images/pulse.svg" alt="myImage" class="icon">
-			Здоровье</a>	
-			<a class="menu-el">
-				<img src="./images/heart.svg" alt="myImage" class="icon">
-			Красота</a>		
-			<a class="menu-el">
-				<img src="./images/cat.svg" alt="myImage" class="icon">
-			Развлечение</a>		
-			<a class="menu-el">
-				<img src="./images/car.svg" alt="myImage" class="icon">
-			Авто</a>		
+			<div class="menu-el">
+				<div id ="icon-1" class="icon"></div>
+				<a>Каталог</a>
+			</div>
+			<div class="menu-el">
+				<div id ="icon-2" class="icon"></div>
+				<a>Здоровье</a>
+			</div>
+			<div class="menu-el">
+				<div id ="icon-3" class="icon"></div>
+				<a>Красота</a>
+			</div>
+			<div class="menu-el">
+				<div id ="icon-4" class="icon"></div>
+				<a>Развлечения</a>
+			</div>
+			<div class="menu-el">
+				<div id ="icon-5" class="icon"></div>
+				<a>Авто</a>
+			</div>
 		</div>
 	</aside>
-	<div class="grid-wrapper">
+	<div class="grid-wrapper" id = 'lol3'>
 		<div class="grid">
 		<div class="grid-el">
 			<div class="grid-el-content">
 				<div class="grid-el-annotation">
-					<h3>пробка на мира</h3>
-					<p>Вечер для двоих</p>
-					<div class="discount">-50%</div>
-					<div class="discount-label">скидка</div>
+					<div>
+						<h3>пробка на мира</h3>
+						<p>Вечер для двоих</p>
+					</div>
+					<div>
+						<div class="discount">-50%</div>
+						<div class="discount-label">скидка</div>
+					</div>
 				</div>
 				<div class="grid-image" id="grid-image-1">
 				</div>
@@ -188,4 +204,5 @@
 	</div>
 	
 </body>
+<script type="text/javascript" src='./script.js'></script>
 </html>
